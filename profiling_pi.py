@@ -5,7 +5,7 @@ import math
 import random
 import decimal
 
-@profile
+#@profile
 def montecarlo(maxIt):
 	ctr = 0
 	variance = 3.141
@@ -18,7 +18,7 @@ def montecarlo(maxIt):
 				cbest=result
 	print " Monte Carlo method: "+str(cbest)
 
-@profile
+#@profile
 def archie(prec):
 	decimal.getcontext().prec = prec
 	D=decimal.Decimal
